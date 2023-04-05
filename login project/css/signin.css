@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+}
+header {
+}
+header .register {
+  position: relative;
+  height: calc(100% - 88px);
+}
+
+header .register .container {
+  background-image: url("../img/Ellipse\ 6236.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+}
+header .register .container .description{
+    position:relative;
+}
+@media (max-width: 992px) {
+  header .register .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    overflow: scroll;
+  }
+}
+
+.main_content_image {
+  width: 450px;
+  position:absolute;
+  bottom:0;
+  left:0;
+ bottom: 76px;
+  animation: photo 6s infinite;
+}
+@keyframes photo {
+  0% {
+    bottom:0;
+  }
+  35% {
+    bottom: 10%;
+  }
+  75% {
+    bottom: 8%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .main_content_image {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .main_content_image {
+    width: 360px;
+  }
+}
+@media (max-width: 1200px) {
+  .desc_text {
+    font-size: 35px !important;
+  }
+}
+
+/* start nav section */
+
+nav {
+  padding: 20px 0px 0px 0px;
+}
+
+.Logo {
+  font-family: "Jura", sans-serif;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 40px;
+  color: #56d1d4;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: 3px;
+}
+
+.Logo .Logo_image {
+  width: 32px;
+}
+@media (max-width: 800px) {
+  .Logo {
+    font-size: 37px;
+  }
+  .Logo .Logo_image {
+    width: 27px;
+  }
+}
+/* end nav section */
+
+.desc_text {
+  font-family: "Jura";
+  font-style: normal;
+  font-size: 45px;
+  color: #0b1f83;
+  margin-top: 44px;
+}
+
+.main_form {
+  width: 547px;
+  background: rgba(239, 239, 239, 0.73);
+  border-radius: 42px;
+  padding: 30px 45px;
+  height: 100%;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .main_form {
+    width: 100%;
+  }
+}
+.main_form_headnig {
+  font-family: "Jura";
+  font-style: normal;
+  font-size: 54px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.main_form .input_field {
+  position: relative;
+  height: fit-content;
+}
+.input_field{
+    margin-bottom:29px;
+}
+
+.main_form .input_field i {
+  position: absolute;
+  color: #00507c;
+  font-size: 20px;
+  top: 50%;
+  left: 25px;
+  margin-top: -12px;
+}
+.main_form form .username {
+  display: flex;
+  gap: 29px;
+}
+
+.main_form form .submittion {
+display:flex;
+align-items:center;
+gap:29px;
+
+}
+
+.main_form form .select_dropdown_menu {
+  background-color: #fff;
+  width: fit-content;
+  padding: 20px 25px 20px 55px;
+  border-radius: 8px;
+  position:relative;
+  flex:1;
+}
+
+.main_form form .select_dropdown_menu select {
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+  color: #00507c;
+  width:100%;
+  cursor:pointer;
+  appearance:none;
+}
+
+.main_form form .select_dropdown_menu i{
+  position: absolute;
+  color: #00507c;
+  font-size: 20px;
+  top: 50%;
+  margin-top:-10px;
+}
+.main_form form .select_dropdown_menu .user{
+   left:25px; 
+}
+ .down_arrow{
+   right:25px;
+}
+
+.main_form .input_field input {
+  width: 100%;
+  padding: 25px 25px 25px 55px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.main_form .input_field input::placeholder {
+  color: #00507c;
+  font-size: 20px;
+}
+
+.next_btn {
+  height:70px;
+  padding:0px 30px;
+  background: #00797c;
+  border-radius: 8px;
+  font-style: normal;
+  font-size: 27px;
+  color: #ffffff;
+  text-align: center;
+  border: 0;
+  transition: background-color 0.2s;
+}
+
+.next_btn:hover {
+  background-color: rgb(0 80 124);
+}
